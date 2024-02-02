@@ -55,7 +55,7 @@ const getUserChoice = (userInput) => {
   }
   
   function playGame(){
-    const userChoice = getUserChoice("rock");
+    const userChoice = getUserChoice("scissors");
     const computerChoice = getComputerChoice();
   
     
