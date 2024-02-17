@@ -1,0 +1,11 @@
+Console. methoden
+.Write
+.WriteLine
+.Read
+.Readline
+
+"Klasse" "name" = new() [Klasse]; // erstellen von einer Klasse 
+Random dice = new Random()
+
+Random // Klasse zum generieren von Zufälligen nicht negativen Ganzzahlen
+.Next(Minimum, Maximum) // Generiert eine nummer für das verbundende Integer

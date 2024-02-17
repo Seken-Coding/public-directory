@@ -1,0 +1,15 @@
+X:\Github\public-directory\PersonalProjects\CSharp\bin\Debug\net8.0\CSharp.exe
+X:\Github\public-directory\PersonalProjects\CSharp\bin\Debug\net8.0\CSharp.deps.json
+X:\Github\public-directory\PersonalProjects\CSharp\bin\Debug\net8.0\CSharp.runtimeconfig.json
+X:\Github\public-directory\PersonalProjects\CSharp\bin\Debug\net8.0\CSharp.dll
+X:\Github\public-directory\PersonalProjects\CSharp\bin\Debug\net8.0\CSharp.pdb
+X:\Github\public-directory\PersonalProjects\CSharp\obj\Debug\net8.0\CSharp.GeneratedMSBuildEditorConfig.editorconfig
+X:\Github\public-directory\PersonalProjects\CSharp\obj\Debug\net8.0\CSharp.AssemblyInfoInputs.cache
+X:\Github\public-directory\PersonalProjects\CSharp\obj\Debug\net8.0\CSharp.AssemblyInfo.cs
+X:\Github\public-directory\PersonalProjects\CSharp\obj\Debug\net8.0\CSharp.csproj.CoreCompileInputs.cache
+X:\Github\public-directory\PersonalProjects\CSharp\obj\Debug\net8.0\CSharp.sourcelink.json
+X:\Github\public-directory\PersonalProjects\CSharp\obj\Debug\net8.0\CSharp.dll
+X:\Github\public-directory\PersonalProjects\CSharp\obj\Debug\net8.0\refint\CSharp.dll
+X:\Github\public-directory\PersonalProjects\CSharp\obj\Debug\net8.0\CSharp.pdb
+X:\Github\public-directory\PersonalProjects\CSharp\obj\Debug\net8.0\CSharp.genruntimeconfig.cache
+X:\Github\public-directory\PersonalProjects\CSharp\obj\Debug\net8.0\ref\CSharp.dll
