@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "X:\\Github\\public-directory\\PersonalProjects\\Csharp_Environment\\Csharp_Environment.csproj",
-      "projectName": "Csharp_Environment",
-      "projectPath": "X:\\Github\\public-directory\\PersonalProjects\\Csharp_Environment\\Csharp_Environment.csproj",
+      "projectUniqueName": "X:\\Github\\public-directory\\PersonalProjects\\TestEnvCSharp\\TestEnvCSharp.csproj",
+      "projectName": "TestEnvCSharp",
+      "projectPath": "X:\\Github\\public-directory\\PersonalProjects\\TestEnvCSharp\\TestEnvCSharp.csproj",
       "packagesPath": "C:\\Users\\Alex\\.nuget\\packages\\",
-      "outputPath": "X:\\Github\\public-directory\\PersonalProjects\\Csharp_Environment\\obj\\",
+      "outputPath": "X:\\Github\\public-directory\\PersonalProjects\\TestEnvCSharp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Alex\\AppData\\Roaming\\NuGet\\NuGet.Config"

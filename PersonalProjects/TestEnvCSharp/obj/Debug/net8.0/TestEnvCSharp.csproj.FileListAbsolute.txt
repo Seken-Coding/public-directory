@@ -1,0 +1,15 @@
+X:\Github\public-directory\PersonalProjects\TestEnvCSharp\bin\Debug\net8.0\TestEnvCSharp.exe
+X:\Github\public-directory\PersonalProjects\TestEnvCSharp\bin\Debug\net8.0\TestEnvCSharp.deps.json
+X:\Github\public-directory\PersonalProjects\TestEnvCSharp\bin\Debug\net8.0\TestEnvCSharp.runtimeconfig.json
+X:\Github\public-directory\PersonalProjects\TestEnvCSharp\bin\Debug\net8.0\TestEnvCSharp.dll
+X:\Github\public-directory\PersonalProjects\TestEnvCSharp\bin\Debug\net8.0\TestEnvCSharp.pdb
+X:\Github\public-directory\PersonalProjects\TestEnvCSharp\obj\Debug\net8.0\TestEnvCSharp.GeneratedMSBuildEditorConfig.editorconfig
+X:\Github\public-directory\PersonalProjects\TestEnvCSharp\obj\Debug\net8.0\TestEnvCSharp.AssemblyInfoInputs.cache
+X:\Github\public-directory\PersonalProjects\TestEnvCSharp\obj\Debug\net8.0\TestEnvCSharp.AssemblyInfo.cs
+X:\Github\public-directory\PersonalProjects\TestEnvCSharp\obj\Debug\net8.0\TestEnvCSharp.csproj.CoreCompileInputs.cache
+X:\Github\public-directory\PersonalProjects\TestEnvCSharp\obj\Debug\net8.0\TestEnvCSharp.sourcelink.json
+X:\Github\public-directory\PersonalProjects\TestEnvCSharp\obj\Debug\net8.0\TestEnvCSharp.dll
+X:\Github\public-directory\PersonalProjects\TestEnvCSharp\obj\Debug\net8.0\refint\TestEnvCSharp.dll
+X:\Github\public-directory\PersonalProjects\TestEnvCSharp\obj\Debug\net8.0\TestEnvCSharp.pdb
+X:\Github\public-directory\PersonalProjects\TestEnvCSharp\obj\Debug\net8.0\TestEnvCSharp.genruntimeconfig.cache
+X:\Github\public-directory\PersonalProjects\TestEnvCSharp\obj\Debug\net8.0\ref\TestEnvCSharp.dll
