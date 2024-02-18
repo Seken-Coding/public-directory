@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "X:\\Github\\public-directory\\PersonalProjects\\CSharp\\CSharp.csproj": {}
+    "X:\\Github\\public-directory\\PersonalProjects\\Csharp_Environment\\Csharp_Environment.csproj": {}
   },
   "projects": {
-    "X:\\Github\\public-directory\\PersonalProjects\\CSharp\\CSharp.csproj": {
+    "X:\\Github\\public-directory\\PersonalProjects\\Csharp_Environment\\Csharp_Environment.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "X:\\Github\\public-directory\\PersonalProjects\\CSharp\\CSharp.csproj",
-        "projectName": "CSharp",
-        "projectPath": "X:\\Github\\public-directory\\PersonalProjects\\CSharp\\CSharp.csproj",
+        "projectUniqueName": "X:\\Github\\public-directory\\PersonalProjects\\Csharp_Environment\\Csharp_Environment.csproj",
+        "projectName": "Csharp_Environment",
+        "projectPath": "X:\\Github\\public-directory\\PersonalProjects\\Csharp_Environment\\Csharp_Environment.csproj",
         "packagesPath": "C:\\Users\\Alex\\.nuget\\packages\\",
-        "outputPath": "X:\\Github\\public-directory\\PersonalProjects\\CSharp\\obj\\",
+        "outputPath": "X:\\Github\\public-directory\\PersonalProjects\\Csharp_Environment\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Alex\\AppData\\Roaming\\NuGet\\NuGet.Config"
