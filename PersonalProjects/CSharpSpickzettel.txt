@@ -65,4 +65,49 @@ Ternary Operators   // if else aber kürzer geschrieben
 string color = "blue";
 string result = (color == "blue") ? "blue" : "NOT blue";    // Ausgabe wäre hier: blue | "?" wäre hier ein IF und ":" ein else
 
+static void methodname(string parameter = "something",string a = "a" , int b = 3, int c = 5){             // Falls der Parameter einen default hat, ist dieser optional und bei neu bestimmung überschrieben
+                                                                                                          // static = unbeweglich, void = wirft kein "return" zurück
+}
+
+methodname("hi",b:6)            // in diesen fall something wird überschrieben, a bleibt gleich, b wird 6 und c bleibt 5
+methodname(b:6, "hi")           // wirft ein fehler weil positionseingaben anschließend nur angenommen werden                   // weitere test hier, was passiert wenn 4 parameter existieren UND wir haben pos. argumente und normale argumente ?
+
+Method Overloading 
+=> Erstelle methoden mit selben namen + parameter und inhalt sind unterschiedlich.
+Durch aufrufen der methode wird überprüft welche übereinstimmt und wird ausgeführt
+-> Versionen von methode
+-> Kann unterschiedliche : 
+    -> Parameter Typen sein 
+    -> Parameter Anzahl sein
+
+Method Outputs:
+Static string variable(){       // Wirft eine Zeichenkette zurück
+    return "example";
+}
+
+Method output out
+e.g 
+int number;
+bool variable1 = Int32.TryParse("10502", out number);
+// number ist 10502 und variable1 ist true(wahr)
+int number2;
+bool variable2 = Int32.TryParse(" !!! ", out number2);
+// number2 ist 0 und success ist false(falsch)
+// warum ? weil in der methode eine variable bearbeitet wurde und diese zusätzlich ausgeworfen wird.
+// Das heißt hier die Methode versucht eine variable zu überprüfen. Diese muss eine Zahl sein um die zweite variable als wahr wiederzugeben.
+// tl:dr wirft eine zweite variable aus die nutzbar ist. Eine art von zweiter "return"
+
+// vereinfachte erklärung.
+Eine methode mit "out" hat die function variablen wiederzugeben.
+Siehe hier : 
+
+int beispielOutZahl;    // initieren einer variable zum speichern des out parameter
+Methode("Beispiel", out beispielOutZahl)        // wirft das out in unsere initierte variable
+
+static void Methode(string beispielString, out int beispielWiedergabe){     // gibt die beispielWiedergabe in die BeispielOutZahl(die oben initiert wurde)
+    beispielWiedergabe = beispielString.Length;                             // konvertiert zeichenkettelänge zu zahl
+}                                                                           // das beispiel hätte man natürlich sehr einfach schreiben könnne mit einer methode ohne void und mit "return beispielString.Length;"
+
+// wichtige notiz hier: die out variable wird von der methode an sich initialisiert
+bei dem Aufruf der Methode kann man eine variable auch initialisieren nach dem "out"
 
