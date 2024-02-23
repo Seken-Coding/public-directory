@@ -1,6 +1,6 @@
 Console. methoden
 .Write
-.WriteLine
+.WriteLine  echo // is the same thing
 .Read
 .Readline
 
@@ -13,9 +13,9 @@ Random // Klasse zum generieren von Zufälligen nicht negativen Ganzzahlen
 Datatypes
 Type        Discription                                             Size(bytes)     .NET type       Range
 
-Int         Whole numbers                                           4               System.Int32    -2,147,483,648 - 2,147,483,648
+int         Whole numbers                                           4               System.Int32    -2,147,483,648 - 2,147,483,648
 long        Whole numbers(Bigger range)                             8               System.Int64    -9,223,372,036,854,775,808 - 9,223,372,036,854,775,808
-flaot       Floating point numbers                                  4               System.Single   +- 3,4 x 10^38
+float       Floating point numbers                                  4               System.Single   +- 3,4 x 10^38
 double      Double precision(more accurate)floating point numbers   8               System.Double   +- 1.7 x 10^308
 decimal     Monetary values                                         16              System.decimal  28 significant figures      (needs an m in the end)
 char        Single character                                        2               System.char     N/A 
@@ -34,7 +34,8 @@ $"blah blah"        // interpolation
 
 string[i]           //i starts counting at 0, outputs letter of the index
 
-Convert.ToDouble()  //String zu Double beispiel
+Convert.ToDouble()  //String zu Double Beispiel
+Convert.ToInt32()   //String zu Int
 
 integer++           //Plus 1
 integer--           //Minus 1
@@ -57,8 +58,8 @@ if                  //Wenn
 else                //Sonst
 
 switch()            //Falls ... eintritt
-case                //Optionen bzw. fall    e.g ||      case "red": break;      case 1: case 2: break; ist möglich (verketten)
-
+case                //Optionen bzw. fall    e.g ||      case "red": break;      "case 1: case 2: break;" ist möglich (verketten)
+return              // ist möglich anstatt break;
 break;              //bricht einen prozess ab bzw. verlässt eine schleife                                                       
 
 Ternary Operators   // if else aber kürzer geschrieben
@@ -111,3 +112,12 @@ static void Methode(string beispielString, out int beispielWiedergabe){     // g
 // wichtige notiz hier: die out variable wird von der methode an sich initialisiert
 bei dem Aufruf der Methode kann man eine variable auch initialisieren nach dem "out"
 
+Expression-bodied Definitions
+
+anstatt:
+//bool IsEven(int num)
+//{
+//  return num % 2 == 0;
+//}
+
+//bool isEven(int num) => num % 2 == 0;             // Der Pfeil ersätzt die {} und return, zum Aufrufen muss man nur "isEven(2);" schreiben
