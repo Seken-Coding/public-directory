@@ -121,3 +121,40 @@ anstatt:
 //}
 
 //bool isEven(int num) => num % 2 == 0;             // Der Pfeil ersätzt die {} und return, zum Aufrufen muss man nur "isEven(2);" schreiben
+
+Array.Exists()          //Überprüft nach arrays und gibt einen Boolean aus wenn er einen entdeckt       // aufgerufene Methode darf keine klammern() enthalten!
+                        //Man kann sich vorstellen das der erste Parameter wiederholt ausgelesen wird und z.B Methode(Beispiel1) , Methode(Beispiel2) Methode(Beispiel3) aufruft
+                        //Wobei die Methode an sich die (Beispiel1), ... selbst aufbringt
+
+Lambda Expressions
+(input-parameters) => expression            //Einfache verwendung
+
+bool hasEvenNumber = Array.Exists(numbers, (int num) => num % 2 == 0 );
+
+
+(input-parameters) => { statement; }        //Mehrfache verwendung (mehrere variablen etc.)
+
+bool hasBigDozen = Array.Exists(numbers, (int num) => {
+  bool isDozenMultiple = num % 12 == 0;
+  bool greaterThan20 = num > 20;
+  return isDozenMultiple && greaterThan20;
+});
+
+//bei einfachen lambda Methoden mit nur einem Parameter benötigt man keine Klammer
+// ein typ eines parameters kann ggbf. ausgelassen werden falls genug bestimmt ist bsp. 's => s = "beispiel"' benötigt keine string angabe// mehr recherche hier //
+
+Arrays
+bestimmung:
+typ[] beispielName = {1,2,3};   //typ wäre hier int die eckigen klammern danach bestimmt ein array
+typ[] beispielName = new int[] {3,4,5}  // bestimmt mit der "new" keyword ein array neu
+
+// Initial declaration
+int[] plantHeights;
+
+// This works
+plantHeights = new int[] { 3, 4, 6 };  
+
+probleme die eintretten könnne
+// This will cause an error
+// plantHeights = { 3, 4, 6 }; 
+
