@@ -143,7 +143,7 @@ bool hasBigDozen = Array.Exists(numbers, (int num) => {
 //bei einfachen lambda Methoden mit nur einem Parameter benötigt man keine Klammer
 // ein typ eines parameters kann ggbf. ausgelassen werden falls genug bestimmt ist bsp. 's => s = "beispiel"' benötigt keine string angabe// mehr recherche hier //
 
-Arrays
+Arrays          //starten von [0]
 bestimmung:
 typ[] beispielName = {1,2,3};   //typ wäre hier int die eckigen klammern danach bestimmt ein array
 typ[] beispielName = new int[] {3,4,5}  // bestimmt mit der "new" keyword ein array neu
@@ -158,3 +158,16 @@ probleme die eintretten könnne
 // This will cause an error
 // plantHeights = { 3, 4, 6 }; 
 
+
+Array.Sort()                                //sortiert array
+Array.IndexOf(originalArray, value)         //value(object) wird gesucht und gibt eine int zurück
+Array.Find(originalArray, ziel)             //Ziel wird gesucht und gibt eine int zurück
+Array.Length                                //Gibt eine int mit der Länge zurück
+Array[i]        // i für position // ruft die position auf und gibt diese wieder
+Array[i] = "";  // überschreibt die positon // beim überschreiben muss der Typ berücksichtigt werden
+
+Array.Copy(originalArray, startPosition, zielArray, AnfangArray, EndeArray) // int zielArray, AnfangArray, EndeArray    //man muss eine zielArray mit genügend speicherplatz bzw. positionen erstellen
+
+Array.Reverse(originalArray)                //dreht das array um
+
+Array.Clear(originalArray,startPosition, length)          //setzt im diesen Beispiel alles auf 0        //int startPosition, length
