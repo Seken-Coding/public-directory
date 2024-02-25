@@ -86,7 +86,7 @@ Static string variable(){       // Wirft eine Zeichenkette zurück
     return "example";
 }
 
-Method output out
+<Method output out>
 e.g 
 int number;
 bool variable1 = Int32.TryParse("10502", out number);
@@ -112,7 +112,7 @@ static void Methode(string beispielString, out int beispielWiedergabe){     // g
 // wichtige notiz hier: die out variable wird von der methode an sich initialisiert
 bei dem Aufruf der Methode kann man eine variable auch initialisieren nach dem "out"
 
-Expression-bodied Definitions
+<Expression-bodied Definitions>
 
 anstatt:
 //bool IsEven(int num)
@@ -126,7 +126,7 @@ Array.Exists()          //Überprüft nach arrays und gibt einen Boolean aus wen
                         //Man kann sich vorstellen das der erste Parameter wiederholt ausgelesen wird und z.B Methode(Beispiel1) , Methode(Beispiel2) Methode(Beispiel3) aufruft
                         //Wobei die Methode an sich die (Beispiel1), ... selbst aufbringt
 
-Lambda Expressions
+<Lambda Expressions>
 (input-parameters) => expression            //Einfache verwendung
 
 bool hasEvenNumber = Array.Exists(numbers, (int num) => num % 2 == 0 );
@@ -143,7 +143,7 @@ bool hasBigDozen = Array.Exists(numbers, (int num) => {
 //bei einfachen lambda Methoden mit nur einem Parameter benötigt man keine Klammer
 // ein typ eines parameters kann ggbf. ausgelassen werden falls genug bestimmt ist bsp. 's => s = "beispiel"' benötigt keine string angabe// mehr recherche hier //
 
-Arrays          //starten von [0]
+<Arrays>         //starten von [0]
 bestimmung:
 typ[] beispielName = {1,2,3};   //typ wäre hier int die eckigen klammern danach bestimmt ein array
 typ[] beispielName = new int[] {3,4,5}  // bestimmt mit der "new" keyword ein array neu
@@ -171,3 +171,24 @@ Array.Copy(originalArray, startPosition, zielArray, AnfangArray, EndeArray) // i
 Array.Reverse(originalArray)                //dreht das array um
 
 Array.Clear(originalArray,startPosition, length)          //setzt im diesen Beispiel alles auf 0        //int startPosition, length
+
+
+
+<While/do/for Loops>
+while (condition){
+
+}
+
+do{                     //Führt die schleife mindestens einmal aus, dann überprüft die voraussetztung um weiter ausgeführt zu werden
+    statement;
+} while (condition);
+
+for(initialisieren; stop; update)           // Zu beachten ist hier ; im parameter 1.eine variable die verwendet wird zum beispiel zählen
+{                                           // 2. wann diese Schleife beendet wird,  3. was passiert nach jeder schleife
+    statement;                              //gutes beispiel ist for(int i = 0; i < 10; i++)    das würde in diesem Fall 10 mal ausgeführt werden
+}
+
+foreach (type element in sequence)          //beispiel foreach(string note in melody)   in ist notwendig hier. wie die for loop wird die erste variable hier note
+{                                           //in eine z.B methode "playmusic(note)" eingesetzt und für die nummer von positionen in melody wiederholt. 
+    statement;
+}
