@@ -1,0 +1,178 @@
+SQL
+
+//celebs ist nur ein Beispiel von codecademy!
+
+SELECT * FROM celebs;   
+
+*                               // wählt alles aus von celebs in diesen Fall
+SELECT table_name FROM celebs;  // wählt eine Spalte aus und gibt diese wieder  verketten durch , bsp: name,year,age
+
+SELECT name AS 'Titles'         // Wählt die name spalte aus und nennt sie hier Titles
+
+SELECT DISTINCT tools           // distinct filtert mehrfache Werte aus
+
+FROM ;                          //Welche Db
+
+WHERE                           //nutzt die unten angebenen konditionen an, und benötigt eine position / spalte
+= equal to
+!= not equal to
+> greater than
+< less than
+>= greater than or equal to
+<= less than or equal to
+
+LIKE                            //Special für Where sucht nach ähnlichen werten. "_" versucht werte in die lücke zu füllen
+WHERE names LIKE 'se_en';       
+WHERE name LIKE 'A%';           // % sorgt für alles das hier z.B mit A anfängt auszuwerfen,
+                                // % würde bei %A% alles suchen das A im wort hat auswerfen.
+IS (NOT) NULL                   // Konditionen
+Between
+AND
+
+Beispiel für AND | OR
+SELECT * FROM movies
+Where year < 1985
+  AND genre = "horror";
+
+select * from movies 
+where genre ="comedy" or genre = "romance";
+
+ORDER BY            // sortiert nach DESC / ASC (Größer zuerst, kleiner zuerst) //immer nach where (falls vorhanden)
+limit             // maximale zurückggb werte
+
+case                //muss mit "end" enden
+Beispiel:
+SELECT name,
+ CASE
+  WHEN imdb_rating > 8 THEN 'Fantastic'
+  WHEN imdb_rating > 6 THEN 'Poorly Received'
+  ELSE 'Avoid at All Costs'
+ END
+FROM movies;
+
+Databases 
+relational database 
+- one or more tables 
+
+Datatypes
+INTEGER Ganze Zahlen
+TEXT    Texte
+Date    Datum
+REAL   für decimal Zahlen
+
+
+CREATE TABLE table_name (       //erstellt eine Tabelle
+    column_1 data_type,             //type INTEGER etc. 
+    column_2 data_type,
+    column_3 data_type,
+);
+
+INSERT INTO table_name(param1,param2,param3)
+VALUES ()           //fügt daten in die Tabelle ein
+
+ALTER TABLE celebs              //Spezifische veränderungen der Tabelle
+ADD COLUMN twitter_handle TEXT; //TEXT kann ersetzt werden mit anderen datenTypen
+
+UPDATE celebs                           //Wählt eine Tabelle aus und eine Reihe wird verändert
+SET twitter_handle = '@taylorswift13'   //Was wird eingefügt
+WHERE id = 4;                           //Wo die Daten eingesetzt werden
+
+DELETE FROM celebs                      //Lösch befehl für ganze Reihen
+WHERE twitter_handle IS NULL;           //Auswahl hier alles das keine Eingabe hat
+
+
+<Constraints>
+CREATE TABLE celebs ( 
+    id INTEGER PRIMARY KEY,                             //Primary key spalten verhindern doppelte Werte in der Reihe
+    name TEXT UNIQUE,                                   //unique Spalten müssen unterschiedliche Werte haben, unterschied ist das es mehrere unique spalten geben kann 
+    date_of_birth TEXT NOT NULL,                        //NOT NULL sagt das die reihe nicht leer sein kann
+    date_of_death TEXT DEFAULT 'Not Applicable'         //DEFAULT bei einfügen eines Wertes ohne angabe der position wird diese hier eingefügt
+);
+
+
+SQLite:
+-stores in a single file
+-easy transfers
+
+-not optimal for working with multiple people
+-limited functions
+-no validating Datatypes -> can insert strings into Integers 
+
+- used for testing ,development and cases where a local database makes sense
+
+
+
+SELECT is the clause we use every time we want to query information from a database.
+AS renames a column or table.
+DISTINCT return unique values.
+WHERE is a popular command that lets you filter the results of the query based on conditions that you specify.
+LIKE and BETWEEN are special operators.
+AND and OR combines multiple conditions.
+ORDER BY sorts the result.
+LIMIT specifies the maximum number of rows that the query will return.
+CASE creates different outputs.
+COUNT(): count the number of rows
+SUM(): the sum of the values in a column
+MAX()/MIN(): the largest/smallest value
+AVG(): the average of the values in a column
+ROUND(): round the values in the column
+
+COUNT() is a function that takes the name of a column as an argument and counts the number of non-empty values in that column.  
+SELECT COUNT(*) 
+FROM fake_apps
+WHERE price = 0;
+
+SUM() is a function that takes the name of a column as an argument and returns the sum of all the values in that column.
+SELECT SUM(downloads)
+FROM fake_apps;
+
+The MAX() and MIN() functions return the highest and lowest values in a column, respectively.
+SELECT MIN(downloads)
+FROM fake_apps;
+
+SELECT MAX(price)
+FROM fake_apps;
+
+The AVG() function works by taking a column name as an argument and returns the average value for that column
+SELECT AVG(price)
+FROM fake_apps;
+
+ROUND() function takes two arguments inside the parenthesis:
+a column name
+an integer
+
+SELECT ROUND(price, 0)
+FROM fake_apps;
+
+Here, we pass the column price and integer 0 as arguments. SQL rounds the values in the column to 0 decimal places in the output.
+
+Verketten kann man das so 
+SELECT ROUND(AVG(price),2)
+FROM fake_apps;
+
+GROUP BY is a clause in SQL that is used with aggregate functions. It is used in collaboration with the SELECT statement to arrange identical data into groups.
+The GROUP BY statement comes after any WHERE statements, but before ORDER BY or LIMIT.
+Select category,SUM(downloads)
+From fake_apps
+group by category
+
+SQL lets us use column reference(s) in our GROUP BY that will make our lives easier.
+
+1 is the first column selected
+2 is the second column selected
+3 is the third column selected
+
+SELECT category, 
+   price,
+   AVG(downloads)
+FROM fake_apps
+GROUP BY category, price;
+
+SELECT category, 
+   price,
+   AVG(downloads)
+FROM fake_apps
+GROUP BY 1, 2;
+
+HAVING is very similar to WHERE. In fact, all types of WHERE clauses you learned about thus far can be used with HAVING.
+Filter groups instead of rows

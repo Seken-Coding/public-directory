@@ -1,0 +1,42 @@
+-- SELECT *
+-- FROM nomnom;
+
+-- Select distinct neighborhood
+-- from nomnom;
+
+-- select distinct cuisine
+-- from nomnom;
+
+-- Select name
+-- from nomnom
+-- where cuisine = "Chinese";
+
+-- Select name from nomnom
+-- where review > 4
+
+-- select name from nomnom
+-- where cuisine ="Italian" and price = "$$$"
+
+-- select name from nomnom
+-- where name Like "%meat%"
+
+-- select name,neighborhood from nomnom 
+-- where neighborhood = "Midtown" 
+-- or neighborhood ="Downtown" 
+-- or neighborhood ="Chinatown"
+
+-- select name,health
+-- from nomnom
+-- where health IS null
+
+select name,review,
+CASE
+  WHEN review > 4.5 then "Extraordinary"
+  When review > 4 then "Excellent"
+  When review > 3 then "Good"
+  When review > 2 then "Fair"
+  else "Poor"
+END as Rating
+  from nomnom
+  order by review desc
+  limit 10

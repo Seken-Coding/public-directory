@@ -202,3 +202,4 @@ In general,
 
 break           //bricht die Schleife ab
 continue        //überspringt den aktuelle Schleifendurchgang
+return          //bricht die schleife ab und falls sie in einer methode aufgerufen wurde die methode ebenso //natürlich kann diese werte zurückgeben
