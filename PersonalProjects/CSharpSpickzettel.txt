@@ -188,7 +188,7 @@ for(initialisieren; stop; update)           // Zu beachten ist hier ; im paramet
     statement;                              //gutes beispiel ist for(int i = 0; i < 10; i++)    das würde in diesem Fall 10 mal ausgeführt werden
 }
 
-foreach (type element in sequence)          //beispiel foreach(string note in melody)   in ist notwendig hier. wie die for loop wird die erste variable hier note
+foreach (type element in sequence)          //beispiel foreach(string note in melody)   in ist notwendig hier. wie die for loop, wird die erste variable hier note
 {                                           //in eine z.B methode "playmusic(note)" eingesetzt und für die nummer von positionen in melody wiederholt. 
     statement;
 }
