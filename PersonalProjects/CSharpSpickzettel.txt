@@ -172,7 +172,7 @@ Array.Reverse(originalArray)                //dreht das array um
 
 Array.Clear(originalArray,startPosition, length)          //setzt im diesen Beispiel alles auf 0        //int startPosition, length
 
-
+zeichenkette.ToCharArray // macht eine String zu einer Char array
 
 <While/do/for Loops>
 while (condition){

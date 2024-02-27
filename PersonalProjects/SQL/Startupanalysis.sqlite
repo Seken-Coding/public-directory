@@ -1,0 +1,34 @@
+-- 1-4
+-- SELECT count(name) as Totalcompanies,
+-- SUM(valuation) as Totalvaluation,
+-- max(raised) as HighestRaisedStartUp 
+-- FROM startups
+
+-- 5
+-- SELECT MAX(raised) as HighestSeedRaised
+-- From startups
+-- Where Stage = "Seed";
+
+-- 6
+-- SELECT name,founded
+-- from startups
+-- group by founded 
+-- Limit 1
+
+-- 7 - 10
+-- Select category, round(avg(valuation),2) 
+-- from startups
+-- group by 1
+-- Order by 2 desc
+
+-- 11-12
+-- SELECT category,count(name)
+-- From startups
+-- group by 1
+-- Having count(category) > 3
+
+-- 13 - 14
+Select avg(employees),location
+from startups
+group by 2
+having avg(employees) > 500

@@ -1,0 +1,52 @@
+-- 1
+-- SELECT title, score
+-- FROM hacker_news
+-- ORDER BY score DESC
+-- LIMIT 5;
+
+-- 2
+-- select SUM(score) from hacker_news;
+
+-- 3
+-- select score,user from hacker_news
+-- group by user
+-- having score > 200;
+
+-- 4
+-- SELECT (517 + 309 + 304 + 282) / 6366.0;
+
+-- 5
+-- select count(url) as rickroll from hacker_news
+-- where url = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+
+-- 6 - 7
+-- select case
+-- when url like "%github.com%" then "Github"
+-- when url like "%medium.com%" then "Medium"
+-- when url like "%nytimes.com%" then "New York Times"
+-- else "Other"
+-- end as Source,
+-- COUNT(*)
+-- From hacker_news
+-- Group by 1;
+
+-- 8 - 9
+-- select score,timestamp,
+-- strftime('%H:%M:%S', timestamp) as time
+-- from hacker_news
+-- order by score desc
+-- limit 10;
+
+-- 10
+select strftime('%H', timestamp) as hour,
+ROUND(avg(score)),
+count(*)
+from hacker_news
+Where timestamp IS NOT NULL
+group by 1
+order by 2 desc
+
+-- 11
+
+
+
