@@ -1,5 +1,10 @@
 SQL
 
+//Was ich verstanden habe:
+Ein From argument ist immer notwendig bei einer query (sonst hat es kein Ziel)
+Select sind immer Vertikale Reihen
+
+
 //celebs ist nur ein Beispiel von codecademy!
 
 SELECT * FROM celebs;   

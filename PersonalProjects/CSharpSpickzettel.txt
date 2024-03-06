@@ -203,3 +203,92 @@ In general,
 break           //bricht die Schleife ab
 continue        //überspringt den aktuelle Schleifendurchgang
 return          //bricht die schleife ab und falls sie in einer methode aufgerufen wurde die methode ebenso //natürlich kann diese werte zurückgeben
+
+
+// classes
+
+// files e.g : Main.cs , Forest.cs
+
+// in Main.cs
+
+using System;
+
+namespace BasicClasses
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      Forest f = new Forest();      // initialisieren der klasse. alles was mit f. (f punkt) beschrieben wird hat zugriff auf the Forest klasse in der anderen Datei.
+      f.name = "timmy";
+      f.biome = "forest";
+      f.trees = 12;
+      f.age = 11;
+
+      Console.WriteLine(f.name);
+    }
+  }
+}
+
+// in Forest.cs
+
+using System;
+
+namespace BasicClasses
+{
+  class Forest
+  {
+    public string name;
+    public string biome;
+    public int trees;
+    public int age;
+  }
+
+}
+
+Properties      // Limitiert Datenzuweisungen. Z.B keine negativen abmessungen für ein Raum oder Fläche
+
+get{}
+set{}
+
+public int area;            //beispiel
+public int Area             // validierungsprozess // man könnte auch "area"(anstatt "Area") aufrufen um das zu umgehen
+{                           //Eigenschaften(Properties)
+  get { return area; }
+  set { area = value; }
+}
+
+public int Area
+{ get; set;}                //automatische eigenschaften
+
+public // überall nutzbar wenn sie aufgerufen wird
+private // Zugreifbar nur von der selben klasse     // zum verhindern des umgehen wie oben beschrieben
+
+
+Get-Only Properties
+
+public string Area
+{
+  get { return area; }          //keine Set angewandt, bei setzen einer variable würde es einen fehler auswerfen
+}
+
+public int Area
+{
+  get { return area; }
+  private set { area = value; }     //nicht möglich wegen private, würde einen fehler auswerfen
+}
+
+Klassen beinhalten auch Methoden
+
+Constructor
+
+    in Forest.cs
+    public Forest(string name, string biome)        //Parameter werden durchgegeben
+    {                       //Alle variablen sind initialisiert (Name,Biome,Age)
+      Name = name;
+      Biome = biome;
+      Age = 0;
+    }
+
+    in Program.cs
+    Forest f = new Forest("Congo", "Desert");

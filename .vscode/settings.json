@@ -1,0 +1,5 @@
+{
+    "dataworkspace.excludedProjects": [
+        "PersonalProjects/SQL/MS SQL Server/Guide/Guide.sqlproj"
+    ]
+}
