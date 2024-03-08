@@ -284,7 +284,7 @@ Constructor
 
     in Forest.cs
     public Forest(string name, string biome)        //Parameter werden durchgegeben
-    {                       //Alle variablen sind initialisiert (Name,Biome,Age)
+    {                       //Alle variablen sind initialisiert (Name,Biome,Age) in der Klasse
       Name = name;
       Biome = biome;
       Age = 0;
@@ -292,3 +292,39 @@ Constructor
 
     in Program.cs
     Forest f = new Forest("Congo", "Desert");
+
+
+    this.Area = area      // Hilft bei Variablen bestimmung bzw. auswahl. (Klassengebundene Variablenauswahl)
+
+    public Forest(int area) : this(area, "Unknown")     // Zweit constructor mit klassenbestimmten variable weitergabe    // wird auch : this() wird auch zur ableitung genutzt von anderen Objekten
+{ 
+  Console.WriteLine("Country property not specified. Value defaulted to 'Unknown'.");
+}
+
+weiteres beispeil:
+
+class Program {
+  public static void Main (string[] args) {
+    Player p = new Player();
+  }
+}
+
+class Player
+{
+  public Player(string name)
+  {
+    Console.WriteLine($"Player named: {name}");
+  }
+
+  public Player() : this("n/a")   // Hier würde Player() mit "n/a" ausgeführt bzw als Parameter weitergegeben   
+  {}
+}
+
+class Breakfast 
+{
+  string[] ingredients;     //Würde eine field(feld) sein
+}
+
+Was ist ein objekt ?
+Eine Instanz einer Klasse
+
